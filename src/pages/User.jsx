@@ -20,6 +20,8 @@ function User() {
     useEffect(()=>{
         getUser(params.login)
         getUserRepos(params.login)
+        //pour enlever le warning des dependencies not used
+        //eslint-disake-next-line react-hooks/exhaustive-deps
     },[])
 
      const{

@@ -66,10 +66,8 @@ export const GithubProvider= ({children})=>{
     //For Get User Repos
 
     const getUserRepos= async(login)=>{
-        
-        
+       
         setLoading()
-
         const params= new URLSearchParams({
             sort:'created',
             per_page:10
